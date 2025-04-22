@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ignacio Diaz | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0e0a1f;
+      color: #f0f0f0;
+      overflow-x: hidden;
+    }
+    header {
+      background: radial-gradient(circle at top, #312877 0%, #0e0a1f 100%);
+      text-align: center;
+      padding: 5rem 1rem 2rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #ffffff;
+    }
+    header p {
+      font-size: 1.25rem;
+      color: #b3b3ff;
+    }
+    nav {
+      background: #18122b;
+      padding: 0.75rem 1rem;
+      display: flex;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      color: #d0c9f3;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover,
+    nav a.active {
+      color: #a086ff;
+    }
+    section {
+      padding: 3rem 1rem;
+      max-width: 960px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2rem;
+      color: #a086ff;
+      margin-bottom: 1rem;
+      border-left: 5px solid #a086ff;
+      padding-left: 0.75rem;
+    }
+    .card {
+      background: #1b1538;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(160, 134, 255, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #120c26;
+      color: #999;
+    }
+    a {
+      color: #a086ff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ignacio Díaz</h1>
+    <p>Computer Science Student | Cybersecurity | Full Stack Developer</p>
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#certs">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate Computer Science student at HLGU with a strong interest in cybersecurity, web development, and network architecture. My academic projects include configuring hardened Ubuntu servers, creating 3D animations in Unreal Engine, and building secure networking topologies.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>🛡️ Cybersecurity Lab</h3>
+      <p>Hardened Ubuntu Server 22.04 using CIS Benchmarks, SSH hardening, and OpenSCAP compliance scanning. Documented all red flags and applied remediations.</p>
+    </div>
+    <div class="card">
+      <h3>🌐 Networking Game Project</h3>
+      <p>Designed a network simulation using Cisco routers, VLANs, and firewall zones. Earned rewards through securing virtual machines and simulating network attacks.</p>
+    </div>
+    <div class="card">
+      <h3>🎮 Unreal Engine Star Wars Animation</h3>
+      <p>Developed a 3D animated sequence in the Star Wars universe using Unreal Engine. Included modeling, lighting, cinematic camera work, and animation sequencing.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Programming: Python, Java, JavaScript, C++</li>
+      <li>Web Development: HTML, CSS, React, Node.js</li>
+      <li>Cybersecurity: Linux Hardening, Penetration Testing, OpenSCAP</li>
+      <li>Networking: Cisco IOS, VLANs, Firewalls</li>
+      <li>Tools: Git, GitHub, Kali Linux, Metasploit, Wireshark</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="card">
+      <h3>Intern - IT Support (Summer 2024)</h3>
+      <p>Worked in an enterprise environment providing Tier 1 support, managing Active Directory accounts, and assisting in system patching processes.</p>
+    </div>
+    <div class="card">
+      <h3>Computer Science Tutor (2023–2025)</h3>
+      <p>Tutored peers in programming, databases, and systems administration. Helped students grasp topics like recursion, normalization, and subnetting.</p>
+    </div>
+  </section>
+
+  <section id="certs">
+    <h2>Certifications</h2>
+    <div class="card">
+      <h3>CCNA: Switching, Routing, and Wireless Essentials</h3>
+      <p>Cisco Networking Academy — Certificate & Verified Badge<br><strong>Issued:</strong> May 19, 2024</p>
+    </div>
+    <div class="card">
+      <h3>CCNA: Introduction to Networks</h3>
+      <p>Cisco Networking Academy — Certificate & Verified Badge<br><strong>Issued:</strong> March 17, 2024</p>
+    </div>
+    <div class="card">
+      <h3>CompTIA Security+ (Expected June 2025)</h3>
+      <p>Studying core principles of risk management, cryptography, and threat detection.</p>
+    </div>
+    <div class="card">
+      <h3>Cisco CCNA (In Progress)</h3>
+      <p>Focused on routing and switching fundamentals, network security, and troubleshooting.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: ignacio.diaz.11@student.hlg.edu</p>
+    <p>GitHub: <a href="https://github.com/ignacio" target="_blank">github.com/ignacio</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/ignacio" target="_blank">linkedin.com/in/ignacio</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ignacio Díaz | Designed with ❤️ using HTML & CSS</p>
+  </footer>
+</body>
+</html>
