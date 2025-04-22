@@ -26,10 +26,12 @@
       font-size: 3rem;
       margin-bottom: 1rem;
       color: #ffffff;
+      text-shadow: 0 0 15px rgba(160, 134, 255, 0.6);
     }
     header p {
       font-size: 1.25rem;
       color: #b3b3ff;
+      text-shadow: 0 0 10px rgba(160, 134, 255, 0.5);
     }
     nav {
       background: #18122b;
@@ -50,32 +52,42 @@
     nav a:hover,
     nav a.active {
       color: #a086ff;
+      text-shadow: 0 0 10px #a086ff;
     }
     section {
-      padding: 3rem 1rem;
-      max-width: 960px;
+      padding: 3rem 3rem;
       margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
     }
     h2 {
       font-size: 2rem;
       color: #a086ff;
-      margin-bottom: 1rem;
       border-left: 5px solid #a086ff;
       padding-left: 0.75rem;
+      text-shadow: 0 0 10px rgba(160, 134, 255, 0.5);
     }
     .card {
       background: #1b1538;
       padding: 1.5rem;
       margin-bottom: 2rem;
       border-radius: 12px;
-      box-shadow: 0 0 15px rgba(160, 134, 255, 0.1);
-      transition: transform 0.3s ease;
+      box-shadow: 0 0 20px rgba(160, 134, 255, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .card:hover {
       transform: translateY(-5px);
+      box-shadow: 0 0 25px rgba(160, 134, 255, 0.6);
     }
     ul {
       padding-left: 1.5rem;
+    }
+    p, li {
+      line-height: 1.7;
+      font-size: 1.05rem;
+      text-align: justify;
+      text-shadow: 0 0 8px rgba(160, 134, 255, 0.1);
     }
     footer {
       text-align: center;
